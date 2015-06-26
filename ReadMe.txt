@@ -35,7 +35,7 @@ The "not-so-obvious" ones:
 	
 3. "Setting up" or "Help!"
 ==========================
-Right now? Uhm. 
+Right now? Uhm... Just add printers as a list element. This is somekind of an "Early Access" release, so - what do you expect? 
 
 
 4. Supported HP Printers
