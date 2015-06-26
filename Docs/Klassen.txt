@@ -1,0 +1,24 @@
+public class Printer{
+			public string DEP { get; set; }
+			public string SN { get; set; }
+			public string IP { get; set; }
+			public bool Active { get; set; }
+			public int PagecounterMono { get; set; }
+			public int PageCounterColor { get; set; }
+		}
+		public class NewInfos{
+			public string SN { get; set; }
+			public int PagecounterMono { get; set; }
+			public int PageCounterColor { get; set; }
+			public bool Active { get; set; }
+		}
+		public class ExportData{
+			public string DEP { get; set; }
+			public string SN { get; set; }
+			public int PagecounterMono { get; set; }
+			public int PageCounterColor { get; set; }
+			public int MonthlyPagesMono { get; set; }
+			public int MonthlyPagesColor { get; set; }
+			public bool Connected { get; set; }
+			public bool NewSN { get; set; }
+		}

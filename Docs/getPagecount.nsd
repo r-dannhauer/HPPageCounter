@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root xmlns:nsd="http://structorizer.fisch.lu/" text="&#34;getPagecount(IP, PrinterWebType)&#34;" comment="" color="ffffff" type="program" style="nice">
+	<children>
+		<instruction text="&#34;Regex regex = new Regex(.)&#34;,&#34;Match match = regex.Match(&#34;&#34;leer&#34;&#34;)&#34;" comment="" color="ffffff" rotated="0"></instruction>
+		<instruction text="&#34;iWebType = getWebType(IP)&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+		<case text="&#34;WebType&#34;,&#34;1&#34;,&#34;default&#34;" comment="&#34;&#34;" color="ffffff">
+			<qCase>
+				<instruction text="&#34;builds URL string&#34;,&#34;reads usage information from URL&#34;,&#34;gets sSN, iPageCounterMono, iPageCounterColor&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qCase>
+			<qCase>
+				<instruction text="&#34;sSN = &#34;&#34;NoWebType&#34;&#34;&#34;,&#34;active = false&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+			</qCase>
+		</case>
+		<instruction text="&#34;returns object of the class NewInfos&#34;" comment="&#34;&#34;" color="ffffff" rotated="0"></instruction>
+	</children>
+</root>

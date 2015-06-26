@@ -1,0 +1,30 @@
+Vorgang 1:
+https://dep06743/hp/device/InternalPages/Index?id=UsagePage
+
+sMatchPattern = "id=\"UsagePage[.]DeviceInformation[.]DeviceSerialNumber\">(..........)<"
+sSN = Ergebnis
+sMatchPattern = "id=\"UsagePage[.]EquivalentImpressionsTable[.]Print[.]Monochrome\" class=\"align-right\">(\\d+).\\d+<"
+sTemp = Ergebnis
+iPagecounterMono = sTemp convert
+sMatchPattern = "id=\"UsagePage[.]EquivalentImpressionsTable[.]Print[.]Color\" class=\"align-right\">(\\d+).\\d+<"
+sTemp = Ergebnis
+iPagecounterColor = sTemp convert
+sMatchPattern = "id=\"UsagePage[.]EquivalentImpressionsTable[.]Copy[.]Monochrome\" class=\"align-right\">(\\d+).\\d+<"
+sTemp = Ergebnis
+iPagecounterMono += sTemp convert
+sMatchPattern = "id=\"UsagePage[.]EquivalentImpressionsTable[.]Copy[.]Color\" class=\"align-right\">(\\d+).\\d+<"
+sTemp = Ergebnis
+iPagecounterColor += sTemp convert
+sMatchPattern = "id=\"UsagePage[.]EquivalentImpressionsTable[.]Fax[.]Monochrome\" class=\"align-right\">(\\d+).\\d+<"
+sTemp = Ergebnis
+iPagecounterMono += sTemp convert
+sMatchPattern = "id=\"UsagePage[.]EquivalentImpressionsTable[.]Fax[.]Color\" class=\"align-right\">(\\d+).\\d+<"
+sTemp = Ergebnis
+iPagecounterColor += sTemp convert
+
+<strong class="product">(.+)<\/strong>
+
+case "HP Officejet Color FlowMFP X585":
+					return 1;
+			default:
+				return 0;
